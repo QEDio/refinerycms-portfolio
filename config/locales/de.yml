@@ -1,0 +1,64 @@
+en:
+  refinery:
+    plugins:
+      portfolio:
+        title: Portfolio
+    portfolio:
+      admin:
+        items:
+          item:
+            gallery: Gallerie
+            gallery_help: Neues Bild der Gallerie hinzufuegen
+            delete: Bild aus der Gallerie entfernen
+            edit: Dieses Bild bearbeiten
+            view_live_html: Diese Bild in der Gallerie betrachten
+          actions:
+            back_to_galleries: Zurueck zu den Gallerien
+            create_new: Neues Bild hinzufuegen
+            reorder: Bilder umsortieren
+            reorder_done: Bilder umsortiert
+          records:
+            no_items_yet: Hier gibt es noch keine Bilder.
+            sorry_no_results: Sorry! Nichts gefunden.
+            title: Bilder
+        galleries:
+          actions:
+            add_image: Bild hinzufuegen
+            create_new: Neue Gallerie erstellen
+            reorder: Gallerien umsortieren
+            reorder_done: Gallerien umsortiert
+            view_root_images: Top-Level Bilder ansehen
+          records:
+            title: Gallerien
+            sorry_no_results: Sorry! Nichts gefunden.
+            no_items_yet: Hier gibt es noch keine Gallieren. Klicken Sie auf "Neue Gallerie erstellen" um Ihre erste Gallerie zu erstellen.
+          gallery:
+            add_image: Fuegt ein Bild der aktuellen Gallierie hinzu.
+            delete: Gallerie unwiederruflich loeschen
+            edit: Gallerie bearbeiten
+            item_count:
+              zero: keine Bilder
+              one: ein Bild
+              other: '%{count} Bilder'
+            new_child: Eine neue Sub-Gallerie hinzufuegen
+            view_live_html: Gallerie in der Vorschau betrachten <br /><em>(oeffnet ein neues Fenster)</em>
+          form:
+            parent_gallery: Uebergeordnete Gallerie
+            parent_gallery_help:
+              Sie koennen Gallerien innerhalb von Gallerien anlegen. Dadurch ist es moeglich ein mehrstufiges Portfolio zu erstellen und anzuzeigen.
+              Waehlen Sie eine Gallerie aus in welche Sie die aktuelle Gallerie verschieben moechten. Wenn Sie nichts auswaehlen erstellen Sie eine Top-Level Gallerie.
+            cover_image: Coverbild
+            cover_image_help: Das Bild welches aus Cover (Umschlag) fuer diese Gallerie fungiert.
+      galleries:
+        show:
+          other: Weitere Gallerien
+  activerecord:
+    attributes:
+      'refinery/portfolio/gallery':
+        title: Titel
+        body: Beschreibung
+        parent_id: Uebergeordnet
+        lft: Lft
+        rgt: Rgt
+        depth: Tiefe
+        type: Typ
